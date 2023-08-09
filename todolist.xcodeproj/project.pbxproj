@@ -16,6 +16,7 @@
 		ECDF1D972A83D76F00DA2575 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D962A83D76F00DA2575 /* Todo.swift */; };
 		ECDF1D9B2A83D97600DA2575 /* TodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D9A2A83D97600DA2575 /* TodoStore.swift */; };
 		ECDF1D9E2A83EA5A00DA2575 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D9D2A83EA5A00DA2575 /* MemoCell.swift */; };
+		ECDF1DA02A83EB3200DA2575 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D9F2A83EB3200DA2575 /* ComposeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		ECDF1D962A83D76F00DA2575 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		ECDF1D9A2A83D97600DA2575 /* TodoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStore.swift; sourceTree = "<group>"; };
 		ECDF1D9D2A83EA5A00DA2575 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		ECDF1D9F2A83EB3200DA2575 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,6 @@
 				ECDF1D952A83D6CB00DA2575 /* Memory */,
 				ECDF1D942A83D6A900DA2575 /* CoreData */,
 				ECDF1D7C2A83D38200DA2575 /* todolistApp.swift */,
-				ECDF1D922A83D5B400DA2575 /* MainListView.swift */,
 				ECDF1D852A83D38300DA2575 /* Assets.xcassets */,
 				ECDF1D872A83D38300DA2575 /* todolist.entitlements */,
 				ECDF1D882A83D38300DA2575 /* Preview Content */,
@@ -104,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				ECDF1D9D2A83EA5A00DA2575 /* MemoCell.swift */,
+				ECDF1D922A83D5B400DA2575 /* MainListView.swift */,
+				ECDF1D9F2A83EB3200DA2575 /* ComposeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				ECDF1D932A83D5B400DA2575 /* MainListView.swift in Sources */,
 				ECDF1D7D2A83D38200DA2575 /* todolistApp.swift in Sources */,
 				ECDF1D9B2A83D97600DA2575 /* TodoStore.swift in Sources */,
+				ECDF1DA02A83EB3200DA2575 /* ComposeView.swift in Sources */,
 				ECDF1D7F2A83D38200DA2575 /* Persistence.swift in Sources */,
 				ECDF1D972A83D76F00DA2575 /* Todo.swift in Sources */,
 			);
