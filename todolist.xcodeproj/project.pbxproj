@@ -10,9 +10,9 @@
 		ECDF1D7D2A83D38200DA2575 /* todolistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D7C2A83D38200DA2575 /* todolistApp.swift */; };
 		ECDF1D7F2A83D38200DA2575 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D7E2A83D38200DA2575 /* Persistence.swift */; };
 		ECDF1D822A83D38200DA2575 /* todolist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D802A83D38200DA2575 /* todolist.xcdatamodeld */; };
-		ECDF1D842A83D38200DA2575 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D832A83D38200DA2575 /* ContentView.swift */; };
 		ECDF1D862A83D38300DA2575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDF1D852A83D38300DA2575 /* Assets.xcassets */; };
 		ECDF1D8A2A83D38300DA2575 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDF1D892A83D38300DA2575 /* Preview Assets.xcassets */; };
+		ECDF1D932A83D5B400DA2575 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D922A83D5B400DA2575 /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		ECDF1D7C2A83D38200DA2575 /* todolistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolistApp.swift; sourceTree = "<group>"; };
 		ECDF1D7E2A83D38200DA2575 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		ECDF1D812A83D38200DA2575 /* todolist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = todolist.xcdatamodel; sourceTree = "<group>"; };
-		ECDF1D832A83D38200DA2575 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECDF1D852A83D38300DA2575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECDF1D872A83D38300DA2575 /* todolist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = todolist.entitlements; sourceTree = "<group>"; };
 		ECDF1D892A83D38300DA2575 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECDF1D922A83D5B400DA2575 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +56,12 @@
 		ECDF1D7B2A83D38200DA2575 /* todolist */ = {
 			isa = PBXGroup;
 			children = (
+				ECDF1D952A83D6CB00DA2575 /* Memory */,
+				ECDF1D942A83D6A900DA2575 /* CoreData */,
 				ECDF1D7C2A83D38200DA2575 /* todolistApp.swift */,
-				ECDF1D7E2A83D38200DA2575 /* Persistence.swift */,
-				ECDF1D832A83D38200DA2575 /* ContentView.swift */,
+				ECDF1D922A83D5B400DA2575 /* MainListView.swift */,
 				ECDF1D852A83D38300DA2575 /* Assets.xcassets */,
 				ECDF1D872A83D38300DA2575 /* todolist.entitlements */,
-				ECDF1D802A83D38200DA2575 /* todolist.xcdatamodeld */,
 				ECDF1D882A83D38300DA2575 /* Preview Content */,
 			);
 			path = todolist;
@@ -73,6 +73,22 @@
 				ECDF1D892A83D38300DA2575 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECDF1D942A83D6A900DA2575 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				ECDF1D7E2A83D38200DA2575 /* Persistence.swift */,
+				ECDF1D802A83D38200DA2575 /* todolist.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		ECDF1D952A83D6CB00DA2575 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDF1D822A83D38200DA2575 /* todolist.xcdatamodeld in Sources */,
+				ECDF1D932A83D5B400DA2575 /* MainListView.swift in Sources */,
 				ECDF1D7D2A83D38200DA2575 /* todolistApp.swift in Sources */,
-				ECDF1D842A83D38200DA2575 /* ContentView.swift in Sources */,
 				ECDF1D7F2A83D38200DA2575 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
