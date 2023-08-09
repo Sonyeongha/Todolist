@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Todostore: ObservableObject {
+class TodoStore: ObservableObject {
     @Published var list: [Todo]
     
     init() {

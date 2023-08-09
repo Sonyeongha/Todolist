@@ -8,13 +8,33 @@
 import SwiftUI
 
 struct MainListView: View {
+    @EnvironmentObject var store: TodoStore /**하나의 데이터를 여러뷰에서 공유하고 싶을떄 이렇게 사용함**/
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(store.list) { memo in
+                VStack(alignment: .leading){
+                    Text(memo.content)
+                        .font(.body)
+                        .lineLimit(1) /**메모내용을 한줄만 표시 뒷부분은 생략처리**/
+                    
+                    Text(memo.insertDate, style: .date)
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                }
+                
+            }
+            .listStyle(.plain)
+            .navigationTitle("좀 해라 제발 좀")
+        }
+        
     }
-}
-
-struct MainListView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainListView()
+    
+    
+    struct MainListView_Previews: PreviewProvider {
+        static var previews: some View {
+            MainListView()
+                .environmentObject(TodoStore())
+        }
     }
 }

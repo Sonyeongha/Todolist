@@ -14,7 +14,7 @@
 		ECDF1D8A2A83D38300DA2575 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDF1D892A83D38300DA2575 /* Preview Assets.xcassets */; };
 		ECDF1D932A83D5B400DA2575 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D922A83D5B400DA2575 /* MainListView.swift */; };
 		ECDF1D972A83D76F00DA2575 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D962A83D76F00DA2575 /* Todo.swift */; };
-		ECDF1D9B2A83D97600DA2575 /* Todostore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D9A2A83D97600DA2575 /* Todostore.swift */; };
+		ECDF1D9B2A83D97600DA2575 /* TodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D9A2A83D97600DA2575 /* TodoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		ECDF1D892A83D38300DA2575 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ECDF1D922A83D5B400DA2575 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		ECDF1D962A83D76F00DA2575 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
-		ECDF1D9A2A83D97600DA2575 /* Todostore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todostore.swift; sourceTree = "<group>"; };
+		ECDF1D9A2A83D97600DA2575 /* TodoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				ECDF1D962A83D76F00DA2575 /* Todo.swift */,
-				ECDF1D9A2A83D97600DA2575 /* Todostore.swift */,
+				ECDF1D9A2A83D97600DA2575 /* TodoStore.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 				ECDF1D822A83D38200DA2575 /* todolist.xcdatamodeld in Sources */,
 				ECDF1D932A83D5B400DA2575 /* MainListView.swift in Sources */,
 				ECDF1D7D2A83D38200DA2575 /* todolistApp.swift in Sources */,
-				ECDF1D9B2A83D97600DA2575 /* Todostore.swift in Sources */,
+				ECDF1D9B2A83D97600DA2575 /* TodoStore.swift in Sources */,
 				ECDF1D7F2A83D38200DA2575 /* Persistence.swift in Sources */,
 				ECDF1D972A83D76F00DA2575 /* Todo.swift in Sources */,
 			);
