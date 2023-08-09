@@ -14,8 +14,12 @@ struct MainListView: View {
     
     var body: some View {
         NavigationView {
-            List(store.list) { memo in
-                MemoCell(memo: memo)
+            List(store.list) { Todo in
+                NavigationLink{
+                    DetailView(memo: Todo)
+                } label: {
+                MemoCell(memo: Todo)
+                }
                 
             }
             .listStyle(.plain)
@@ -28,7 +32,8 @@ struct MainListView: View {
                     Text("리스트 추가")
                 }
             }
-            .sheet(isPresented: $showComposer) /**바인딩을 전달해야하기 떄문에$표시추가**/ {
+            .sheet(isPresented: $showComposer)
+            /**바인딩을 전달해야하기 떄문에$표시추가**/ {
                 ComposeView()
             }
         }
