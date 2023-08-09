@@ -12,9 +12,9 @@ class TodoStore: ObservableObject {
     
     init() {
         list = [
-            Todo(content: "Hello", insertDate: Date.now),
-            Todo(content: "Awesome", insertDate: Date.now.addingTimeInterval(3600 * -24)),
-            Todo(content: "SwiftUI", insertDate: Date.now.addingTimeInterval(3600 * -44))
+            Todo(content: "8시 기상", insertDate: Date.now),
+            Todo(content: "고양이 화장실 청소",insertDate: Date.now),
+            Todo(content: "9시 입실", insertDate: Date.now)
         ]
     }
     
