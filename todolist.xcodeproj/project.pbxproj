@@ -15,6 +15,7 @@
 		ECDF1D932A83D5B400DA2575 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D922A83D5B400DA2575 /* MainListView.swift */; };
 		ECDF1D972A83D76F00DA2575 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D962A83D76F00DA2575 /* Todo.swift */; };
 		ECDF1D9B2A83D97600DA2575 /* TodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D9A2A83D97600DA2575 /* TodoStore.swift */; };
+		ECDF1D9E2A83EA5A00DA2575 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1D9D2A83EA5A00DA2575 /* MemoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ECDF1D922A83D5B400DA2575 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		ECDF1D962A83D76F00DA2575 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		ECDF1D9A2A83D97600DA2575 /* TodoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStore.swift; sourceTree = "<group>"; };
+		ECDF1D9D2A83EA5A00DA2575 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		ECDF1D7B2A83D38200DA2575 /* todolist */ = {
 			isa = PBXGroup;
 			children = (
+				ECDF1D9C2A83EA2700DA2575 /* View */,
 				ECDF1D952A83D6CB00DA2575 /* Memory */,
 				ECDF1D942A83D6A900DA2575 /* CoreData */,
 				ECDF1D7C2A83D38200DA2575 /* todolistApp.swift */,
@@ -95,6 +98,14 @@
 				ECDF1D9A2A83D97600DA2575 /* TodoStore.swift */,
 			);
 			path = Memory;
+			sourceTree = "<group>";
+		};
+		ECDF1D9C2A83EA2700DA2575 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECDF1D9D2A83EA5A00DA2575 /* MemoCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDF1D9E2A83EA5A00DA2575 /* MemoCell.swift in Sources */,
 				ECDF1D822A83D38200DA2575 /* todolist.xcdatamodeld in Sources */,
 				ECDF1D932A83D5B400DA2575 /* MainListView.swift in Sources */,
 				ECDF1D7D2A83D38200DA2575 /* todolistApp.swift in Sources */,

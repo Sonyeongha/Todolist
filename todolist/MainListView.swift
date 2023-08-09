@@ -13,15 +13,7 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(store.list) { memo in
-                VStack(alignment: .leading){
-                    Text(memo.content)
-                        .font(.body)
-                        .lineLimit(1) /**메모내용을 한줄만 표시 뒷부분은 생략처리**/
-                    
-                    Text(memo.insertDate, style: .date)
-                        .font(.footnote)
-                        .foregroundColor(.gray)
-                }
+                MemoCell(memo: memo)
                 
             }
             .listStyle(.plain)
@@ -38,3 +30,4 @@ struct MainListView: View {
         }
     }
 }
+
