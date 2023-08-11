@@ -14,16 +14,19 @@ struct MainListView: View {
     
     var body: some View {
         NavigationView {
-            List(store.list) { Todo in
-                NavigationLink{
-                    DetailView(memo: Todo)
-                } label: {
-                MemoCell(memo: Todo)
+            List {
+                ForEach(store.list) { memo in
+                    NavigationLink{
+                        DetailView(memo: memo)
+                    } label: {
+                        memoCell(memo: memo)
+                    }
                 }
+                .onDelete(perform: store.delete)
                 
             }
             .listStyle(.plain)
-            .navigationTitle("좀 해라 제발 좀")
+            .navigationTitle ("제발 좀 해라")
             .padding()
             .toolbar {
                 Button {
@@ -33,9 +36,9 @@ struct MainListView: View {
                 }
             }
             .sheet(isPresented: $showComposer)
-            /**바인딩을 전달해야하기 떄문에$표시추가**/ {
-                ComposeView()
-            }
+            {
+            ComposeView()
+        }
         }
         
     }

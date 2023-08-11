@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class Todo: Identifiable, ObservableObject {
+class Memo: Identifiable, ObservableObject {
     let id: UUID
     @Published var content: String
     let insertDate: Date

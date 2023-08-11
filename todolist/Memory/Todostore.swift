@@ -8,21 +8,21 @@
 import Foundation
 
 class TodoStore: ObservableObject {
-    @Published var list: [Todo]
+    @Published var list: [Memo]
     
     init() {
         list = [
-            Todo(content: "8시 기상", insertDate: Date.now),
-            Todo(content: "고양이 화장실 청소",insertDate: Date.now),
-            Todo(content: "9시 입실", insertDate: Date.now)
+            Memo(content: "8시 기상", insertDate: Date.now),
+            Memo(content: "고양이 화장실 청소",insertDate: Date.now),
+            Memo(content: "9시 입실", insertDate: Date.now)
         ]
     }
     
     func insert(memo: String) {
-        list.insert(Todo(content: memo), at : 0)
+        list.insert(Memo(content: memo), at : 0)
     }
     
-    func update(memo: Todo?, content: String) {
+    func update(memo: Memo?, content: String) {
         guard let memo = memo else { /**옵셔널을 풀어주기 위해 바인딩하기**/
             return
         }
@@ -32,7 +32,7 @@ class TodoStore: ObservableObject {
     
     
     /**메모와 인덱스를 받는 버전 구현하기**/
-    func delete(memo: Todo) {
+    func delete(memo: Memo) {
         list.removeAll {$0.id == memo.id }
     }
     
